@@ -1,4 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+
+export const colors = {
+  primary: '#F5DF4D',
+  secondary: '#96999C',
+  white: '#FFFFFF',
+  black: '#000000',
+}
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -13,7 +20,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
   }
 
   #app {
@@ -27,6 +36,22 @@ const GlobalStyle = createGlobalStyle`
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
-`;
 
-export default GlobalStyle;
+  .full-height {
+    min-height: 100vh
+  }
+
+  // Button Colors
+  .btn-primary {
+    background-color: ${colors.primary}!important;
+    border-color: ${colors.primary}!important;
+    color: ${colors.black}!important
+  }
+  .btn-secondary {
+    background-color: ${colors.secondary}!important;
+    border-color: ${colors.secondary}!important;
+    color: ${colors.white}!important
+  }
+`
+
+export default GlobalStyle
