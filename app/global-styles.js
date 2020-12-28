@@ -41,16 +41,55 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh
   }
 
-  // Button Colors
-  .btn-primary {
-    background-color: ${colors.primary}!important;
-    border-color: ${colors.primary}!important;
-    color: ${colors.black}!important
+  .font-weight-100 {
+    font-weight: 100;
   }
-  .btn-secondary {
-    background-color: ${colors.secondary}!important;
-    border-color: ${colors.secondary}!important;
-    color: ${colors.white}!important
+  .font-weight-200 {
+    font-weight: 200;
+  }
+  .font-weight-300 {
+    font-weight: 300;
+  }
+  .font-weight-400 {
+    font-weight: 400;
+  }
+  .font-weight-500 {
+    font-weight: 500;
+  }
+  .font-weight-600 {
+    font-weight: 600;
+  }
+  .font-weight-700 {
+    font-weight: 700;
+  }
+  .font-weight-800 {
+    font-weight: 800;
+  }
+  .font-weight-900 {
+    font-weight: 900;
+  }
+
+  .custom {
+    // Button Colors
+    .btn-primary {
+      background-color: ${colors.primary}!important;
+      border-color: ${colors.primary}!important;
+      color: ${colors.black}!important
+    }
+    .btn-secondary {
+      background-color: ${colors.secondary}!important;
+      border-color: ${colors.secondary}!important;
+      color: ${colors.white}!important
+    }
+
+    // Background Colors
+    .bg-primary {
+      background-color: ${colors.primary}!important;
+    }
+
+    .bg-secondary {
+      background-color: ${colors.secondary}!important;
+    }
   }
 `
 

@@ -11,9 +11,10 @@ import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import { Switch, Route } from 'react-router-dom'
 
-import FeaturePage from 'containers/FeaturePage/Loadable'
 import NotFoundPage from 'containers/NotFoundPage/Loadable'
 import LoginPage from 'containers/LoginPage/Loadable'
+import Dashboard from 'containers/Dashboard/Loadable'
+import ProductPage from 'containers/ProductPage/Loadable'
 
 import GlobalStyle, { colors } from '../../global-styles'
 
@@ -27,7 +28,7 @@ const AppWrapper = styled.div`
 
 export default function App() {
   return (
-    <AppWrapper>
+    <AppWrapper className="custom">
       <Helmet titleTemplate="%s - React.js Boilerplate" defaultTitle="Chijeu">
         <meta name="description" content="A React.js Boilerplate application" />
         <link
@@ -44,7 +45,8 @@ export default function App() {
       </Helmet>
       <Switch>
         <Route exact path="/" component={LoginPage} />
-        <Route path="/features" component={FeaturePage} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/products" component={ProductPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
