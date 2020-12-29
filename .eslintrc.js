@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 
 const prettierOptions = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
-);
+)
 
 module.exports = {
   parser: 'babel-eslint',
@@ -60,6 +60,7 @@ module.exports = {
     'newline-per-chained-call': 0,
     'no-confusing-arrow': 0,
     'no-console': 1,
+    'no-param-reassign': 0,
     'no-unused-vars': 2,
     'no-use-before-define': 0,
     'prefer-template': 2,
@@ -86,4 +87,4 @@ module.exports = {
       },
     },
   },
-};
+}

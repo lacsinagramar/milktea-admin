@@ -12,6 +12,7 @@ module.exports = {
     'styled-components',
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-syntax-dynamic-import',
+    'inline-dotenv',
   ],
   env: {
     production: {
@@ -30,4 +31,4 @@ module.exports = {
       ],
     },
   },
-};
+}

@@ -90,6 +90,15 @@ const GlobalStyle = createGlobalStyle`
     .bg-secondary {
       background-color: ${colors.secondary}!important;
     }
+
+    // Text Colors
+    .text-primary {
+      color: ${colors.primary}!important;
+    }
+
+    .text-secondary {
+      color: ${colors.secondary}!important;
+    }
   }
 `
 
